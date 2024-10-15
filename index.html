@@ -4,49 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Simple HTML Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
+            background-color: #f1f1f1;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: black;
-            color: white;
             padding: 20px;
-            text-align: center;
+            color: #434343;
         }
 
         h1 {
+            text-align: center;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 20px 0;
             margin: 0;
-            color: white;
         }
 
         h2 {
+            color: #262626;
             margin-top: 20px;
         }
 
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
         p {
-            color: #555;
+            margin: 12px 0;
         }
 
         a {
-            color: #0066cc;
+            color: #d71559; /* Instagram color */
             text-decoration: none;
+            font-weight: bold;
         }
 
         a:hover {
@@ -55,7 +42,7 @@
 
         .image-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 15px;
             margin-top: 20px;
         }
@@ -65,63 +52,32 @@
             height: auto;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .image-grid img:hover {
-            transform: scale(1.1); /* Scale the image larger on hover */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-        }
-
-        .custom-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #E1306C;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s, transform 0.3s;
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .custom-button:hover {
-            background-color: #C13584;
-            transform: translateY(-2px);
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Hello! Welcome to my page!</h1>
-</header>
+<h1>Hello! Welcome to my page!</h1>
+<h2>About Me:</h2>
+<p>I take photos of cars; you can see some examples of my photos below:</p>
 
-<div class="container">
-    <section>
-        <h2>About Me:</h2>
-        <p>I take photos of cars, and you can check out some examples of my work below:</p>
-    </section>
-
-    <section>
-        <h2>Photos</h2>
-        <div class="image-grid">
-            <a href="IMG_1161.JPG" download><img src="IMG_1161.JPG" alt="BMW M4"></a>
-            <a href="IMG_1182.JPG" download><img src="IMG_1182.JPG" alt="Mercedes AMG GT 2024"></a>
-            <a href="IMG_1204.JPG" download><img src="IMG_1204.JPG" alt="Mercedes AMG GT 2024"></a>
-            <a href="IMG_1347.jpg" download><img src="IMG_1347.jpg" alt="BMW M4"></a>
-            <a href="photo.PNG" download><img src="photo.PNG" alt="Lamborghini Huracan EVO"></a>
-            <a href="IMG_1238.JPG" download><img src="IMG_1238.JPG" alt=""></a>
-        </div>
-    </section>
-
-    <section>
-        <a href="https://www.instagram.com/korobkin_name/profilecard/?igsh=emkybHFpZnY1dGIy&scrlybrkr=f29c0b9c" class="custom-button" target="_blank">
-            <i class="fab fa-instagram"></i> Follow me on Instagram
-        </a>
-    </section>
+<h2>Photos</h2>
+<div class="image-grid">
+    <a href="IMG_1161.JPG" download><img src="IMG_1161.JPG" alt="BMW M4"></a>
+    <a href="IMG_1182.JPG" download><img src="IMG_1182.JPG" alt="Mercedes AMG GT 2024"></a>
+    <a href="IMG_1204.JPG" download><img src="IMG_1204.JPG" alt="Mercedes AMG GT 2024"></a>
+    <a href="IMG_1347.jpg" download><img src="IMG_1347.jpg" alt="BMW M4"></a>
+    <a href="photo.PNG" download><img src="photo.PNG" alt="Lamborghini Huracan EVO"></a>
+    <a href="IMG_1238.JPG" download><img src="IMG_1238.JPG" alt=""></a>
 </div>
+
+<p><a href="https://www.instagram.com/korobkin_name/profilecard/?igsh=emkybHFpZnY1dGIy&amp;scrlybrkr=f29c0b9c">Follow me on Instagram</a></p>
 
 </body>
 </html>
