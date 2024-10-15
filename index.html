@@ -15,7 +15,7 @@
         }
 
         header {
-            background-color: black; /* Changed to black */
+            background-color: black;
             color: white;
             padding: 20px;
             text-align: center;
@@ -23,7 +23,7 @@
 
         h1 {
             margin: 0;
-            color: white; /* Ensure the title is visible on a black background */
+            color: white;
         }
 
         h2 {
@@ -66,12 +66,18 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s; /* Transition for smooth effects */
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05); /* Scale the image on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
         }
 
         .custom-button {
             display: inline-block;
             padding: 12px 24px;
-            background-color: #E1306C; /* Keep the button pink or change as needed */
+            background-color: #E1306C;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -81,7 +87,7 @@
         }
 
         .custom-button:hover {
-            background-color: #C13584; /* Darker pink on hover */
+            background-color: #C13584;
             transform: translateY(-2px);
         }
     </style>
