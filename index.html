@@ -28,6 +28,7 @@
 
         p {
             margin: 12px 0;
+            font-size: 16px; /* Increased font size for readability */
         }
 
         a {
@@ -42,7 +43,7 @@
 
         .image-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
             gap: 15px;
             margin-top: 20px;
         }
@@ -56,7 +57,7 @@
         }
 
         .image-grid img:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Reduced scale on hover */
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
 
@@ -70,11 +71,21 @@
             transition: background-color 0.3s, transform 0.3s;
             margin-top: 20px;
             text-align: center;
+            font-size: 16px; /* Increased button font size */
+            width: 100%; /* Full width on mobile */
+            max-width: 300px; /* Limit width on larger screens */
         }
 
         .custom-button:hover {
             background-color: #C13584; /* Darker pink on hover */
             transform: translateY(-2px);
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: 1fr; /* 1 column for mobile */
+            }
         }
     </style>
 </head>
