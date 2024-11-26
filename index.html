@@ -12,6 +12,11 @@
             margin: 0;
             padding: 20px;
             color: #434343;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            flex-direction: column;
         }
 
         h1 {
@@ -88,6 +93,16 @@
                 grid-template-columns: 1fr; /* 1 column for mobile */
             }
         }
+
+        /* Style for the model container */
+        .model-container {
+            width: 80%;  /* Adjust width as needed */
+            height: 700px;  /* Larger height for the model */
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -111,8 +126,26 @@
 </a>
 
 <h2>Ferrari 812 Competizione 3D Model</h2>
-<model-viewer src="2023_ferrari_812_competizione.glb" alt="Ferrari 812 Competizione" auto-rotate camera-controls background-color="#F1F1F1"></model-viewer>
+<div class="model-container" id="modelViewerContainer"></div>
+
+<script>
+    // JavaScript to dynamically load the 3D model using model-viewer
+    document.addEventListener('DOMContentLoaded', function() {
+        // Create a <model-viewer> element dynamically
+        const modelViewer = document.createElement('model-viewer');
+        modelViewer.src = 'Ferrari_812_Competizione.glb'; // Path to your 3D model file
+        modelViewer.alt = 'Ferrari 812 Competizione';
+        modelViewer.autoRotate = true;
+        modelViewer.cameraControls = true;
+        modelViewer.backgroundColor = '#F1F1F1';
+        modelViewer.style.width = '100%';  // Adjust width to be larger
+        modelViewer.style.height = '600px';  // Larger height for better viewing
+
+        // Append the model-viewer to the container
+        const container = document.getElementById('modelViewerContainer');
+        container.appendChild(modelViewer);
+    });
+</script>
     
 </body>
 </html>
-
