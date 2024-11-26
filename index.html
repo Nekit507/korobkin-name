@@ -17,6 +17,7 @@
             align-items: center;
             height: 100vh; /* Full viewport height */
             flex-direction: column;
+            overflow: auto; /* Allow scrolling if content overflows */
         }
 
         h1 {
@@ -25,6 +26,7 @@
             background-color: #000000;
             padding: 20px 0;
             margin: 0;
+            width: 100%; /* Ensure it takes full width */
         }
 
         h2 {
@@ -97,8 +99,8 @@
         /* Style for the model container */
         .model-container {
             width: 80%;  /* Adjust width as needed */
-            height: 700px;  /* Larger height for the model */
-            margin-top: 20px;
+            height: 600px;  /* Larger height for the model */
+            margin-top: 30px; /* Spacing between heading and model */
             display: flex;
             justify-content: center;
             align-items: center;
