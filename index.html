@@ -14,10 +14,10 @@
             color: #434343;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* Start from top */
             align-items: center;
-            height: 100vh;
-            overflow: auto;
+            min-height: 100vh; /* Ensure the body takes at least the full height */
+            box-sizing: border-box; /* Avoid overflow caused by padding */
         }
 
         h1 {
@@ -148,12 +148,9 @@
 <h2>Dreamcar</h2>
 <div class="model-container">
     <model-viewer src="2023_ferrari_812_competizione.glb" alt="Ferrari 812 Competizione" auto-rotate camera-controls background-color="#F1F1F1">
-        <!-- Fallback content for browsers that do not support model-viewer -->
-        Your browser does not support 3D models. Please try a modern browser.
+       
     </model-viewer>
 </div>
     
 </body>
-</html>
-
-      
+</html>.      can  not see a 3D model 
